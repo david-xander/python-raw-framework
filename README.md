@@ -3,6 +3,10 @@ The framework will be behind an nginx and will use gunicorn as it's WSGI.
 
 The Docker composition is provided for the testing.
 
+## Using gunicorn like this in DEV
+To be able to modify the python code and reflect the change when it happens.
+
+gunicorn --workers=2 app:app --reload
 
 ## In order to build the image
 docker-compose build

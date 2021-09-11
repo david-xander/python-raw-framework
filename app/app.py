@@ -1,6 +1,6 @@
 # app.py
 
-from api import API
+from raw.api import API
 
 
 app = API()
@@ -8,12 +8,12 @@ app = API()
 
 @app.route("/home")
 def home(request, response):
-    response.text = "Hello from the HOME page"
+    response.text = "Hello from the HOME page 4"
 
 
-@app.route("/about")
-def about(request, response):
-    response.text = "Hello from the ABOUT page"
+@app.route("/about/{cosa}")
+def about(request, response, cosa):
+    response.text = f"Hello from the ABOUT page {cosa}"
 
 
 @app.route("/hello/{name}")
