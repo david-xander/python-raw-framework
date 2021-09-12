@@ -1,7 +1,6 @@
 from parse import parse
 from webob import Request, Response
 
-
 class API:
     def __init__(self):
         self.routes = {}

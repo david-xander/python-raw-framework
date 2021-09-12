@@ -1,3 +1,5 @@
 .DS_store
 *.code-workspace
-*.vscode
+.vscode
+.venv
+__pycache__
